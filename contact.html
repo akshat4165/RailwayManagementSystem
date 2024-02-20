@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - Railway-Trains</title>
+    <!-- Add Bootstrap CDN links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Add Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add Roboto font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Your custom styles -->
+    <style>
+        body {
+            background-color: #2c3e50;
+            background-image: url(blackbg.jpg);
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            display: flex;
+            background-color: transparent;
+            padding: 15px 0;
+            margin-bottom: 0px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        h2 {
+            color: #ecf0f1;
+        }
+
+        .nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            color: #3498db;
+        }
+
+        .contact-container {
+            text-align: center;
+            color: #ecf0f1;
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(78, 93, 109, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Background Video Container -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="contactvid.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav">
+        <a class="active" href="Home.html"><i class="fas fa-home"></i> Home</a>
+        <a class="registration" href="RegistrationForm.html"><i class="fas fa-user-plus"></i> Register</a>
+        <a class="gallery" href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+        <a class="about" href="trains.html" role="button" id="ourTrainsDropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-train"></i> Our Trains
+        </a>
+        <a class="photos" href="contact.html"><i class="fas fa-phone"></i> Contact-Us</a>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container contact-container">
+        <h2><b>Contact Us</b></h2>
+        <p class="contact-info">Feel free to reach out to us for any inquiries or assistance. We are here to help!</p>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Your Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="Your Phone Number">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js CDN links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
